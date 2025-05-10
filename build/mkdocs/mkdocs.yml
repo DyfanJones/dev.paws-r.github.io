@@ -1,4 +1,4 @@
-site_name: 'paws: 0.8.0'
+site_name: 'paws: 0.9.0'
 theme:
   name: material
   logo: logo.png
@@ -65,6 +65,7 @@ nav:
         - Get Finding Recommendation: docs/accessanalyzer_get_finding_recommendation.md
         - Get Finding V2: docs/accessanalyzer_get_finding_v2.md
         - Get Finding: docs/accessanalyzer_get_finding.md
+        - Get Findings Statistics: docs/accessanalyzer_get_findings_statistics.md
         - Get Generated Policy: docs/accessanalyzer_get_generated_policy.md
         - List Access Preview Findings: docs/accessanalyzer_list_access_preview_findings.md
         - List Access Previews: docs/accessanalyzer_list_access_previews.md
@@ -1459,6 +1460,7 @@ nav:
         - Create Change Set: docs/cloudformation_create_change_set.md
         - Create Generated Template: docs/cloudformation_create_generated_template.md
         - Create Stack Instances: docs/cloudformation_create_stack_instances.md
+        - Create Stack Refactor: docs/cloudformation_create_stack_refactor.md
         - Create Stack Set: docs/cloudformation_create_stack_set.md
         - Create Stack: docs/cloudformation_create_stack.md
         - Deactivate Organizations Access: docs/cloudformation_deactivate_organizations_access.md
@@ -1479,6 +1481,7 @@ nav:
         - Describe Stack Drift Detection Status: docs/cloudformation_describe_stack_drift_detection_status.md
         - Describe Stack Events: docs/cloudformation_describe_stack_events.md
         - Describe Stack Instance: docs/cloudformation_describe_stack_instance.md
+        - Describe Stack Refactor: docs/cloudformation_describe_stack_refactor.md
         - Describe Stack Resource Drifts: docs/cloudformation_describe_stack_resource_drifts.md
         - Describe Stack Resource: docs/cloudformation_describe_stack_resource.md
         - Describe Stack Resources: docs/cloudformation_describe_stack_resources.md
@@ -1492,6 +1495,7 @@ nav:
         - Detect Stack Set Drift: docs/cloudformation_detect_stack_set_drift.md
         - Estimate Template Cost: docs/cloudformation_estimate_template_cost.md
         - Execute Change Set: docs/cloudformation_execute_change_set.md
+        - Execute Stack Refactor: docs/cloudformation_execute_stack_refactor.md
         - Get Generated Template: docs/cloudformation_get_generated_template.md
         - Get Stack Policy: docs/cloudformation_get_stack_policy.md
         - Get Template Summary: docs/cloudformation_get_template_summary.md
@@ -1507,6 +1511,8 @@ nav:
         - List Resource Scans: docs/cloudformation_list_resource_scans.md
         - List Stack Instance Resource Drifts: docs/cloudformation_list_stack_instance_resource_drifts.md
         - List Stack Instances: docs/cloudformation_list_stack_instances.md
+        - List Stack Refactor Actions: docs/cloudformation_list_stack_refactor_actions.md
+        - List Stack Refactors: docs/cloudformation_list_stack_refactors.md
         - List Stack Resources: docs/cloudformation_list_stack_resources.md
         - List Stack Set Auto Deployment Targets: docs/cloudformation_list_stack_set_auto_deployment_targets.md
         - List Stack Set Operation Results: docs/cloudformation_list_stack_set_operation_results.md
@@ -1787,6 +1793,7 @@ nav:
         - Register Organization Delegated Admin: docs/cloudtrail_register_organization_delegated_admin.md
         - Remove Tags: docs/cloudtrail_remove_tags.md
         - Restore Event Data Store: docs/cloudtrail_restore_event_data_store.md
+        - Search Sample Queries: docs/cloudtrail_search_sample_queries.md
         - Start Dashboard Refresh: docs/cloudtrail_start_dashboard_refresh.md
         - Start Event Data Store Ingestion: docs/cloudtrail_start_event_data_store_ingestion.md
         - Start Import: docs/cloudtrail_start_import.md
@@ -3030,6 +3037,7 @@ nav:
         - Import Phone Number: docs/connect_import_phone_number.md
         - List Agent Statuses: docs/connect_list_agent_statuses.md
         - List Analytics Data Associations: docs/connect_list_analytics_data_associations.md
+        - List Analytics Data Lake Data Sets: docs/connect_list_analytics_data_lake_data_sets.md
         - List Approved Origins: docs/connect_list_approved_origins.md
         - List Associated Contacts: docs/connect_list_associated_contacts.md
         - List Authentication Profiles: docs/connect_list_authentication_profiles.md
@@ -3237,14 +3245,17 @@ nav:
         - Update Campaign Source: docs/connectcampaignservicev2_update_campaign_source.md
       Connect Cases (connectcases):
         - Client: docs/connectcases.md
+        - Batch Get Case Rule: docs/connectcases_batch_get_case_rule.md
         - Batch Get Field: docs/connectcases_batch_get_field.md
         - Batch Put Field Options: docs/connectcases_batch_put_field_options.md
+        - Create Case Rule: docs/connectcases_create_case_rule.md
         - Create Case: docs/connectcases_create_case.md
         - Create Domain: docs/connectcases_create_domain.md
         - Create Field: docs/connectcases_create_field.md
         - Create Layout: docs/connectcases_create_layout.md
         - Create Related Item: docs/connectcases_create_related_item.md
         - Create Template: docs/connectcases_create_template.md
+        - Delete Case Rule: docs/connectcases_delete_case_rule.md
         - Delete Domain: docs/connectcases_delete_domain.md
         - Delete Field: docs/connectcases_delete_field.md
         - Delete Layout: docs/connectcases_delete_layout.md
@@ -3255,6 +3266,7 @@ nav:
         - Get Domain: docs/connectcases_get_domain.md
         - Get Layout: docs/connectcases_get_layout.md
         - Get Template: docs/connectcases_get_template.md
+        - List Case Rules: docs/connectcases_list_case_rules.md
         - List Cases For Contact: docs/connectcases_list_cases_for_contact.md
         - List Domains: docs/connectcases_list_domains.md
         - List Field Options: docs/connectcases_list_field_options.md
@@ -3267,6 +3279,7 @@ nav:
         - Search Related Items: docs/connectcases_search_related_items.md
         - Tag Resource: docs/connectcases_tag_resource.md
         - Untag Resource: docs/connectcases_untag_resource.md
+        - Update Case Rule: docs/connectcases_update_case_rule.md
         - Update Case: docs/connectcases_update_case.md
         - Update Field: docs/connectcases_update_field.md
         - Update Layout: docs/connectcases_update_layout.md
@@ -5124,14 +5137,6 @@ nav:
         - Update Environment: docs/elasticbeanstalk_update_environment.md
         - Update Tags For Resource: docs/elasticbeanstalk_update_tags_for_resource.md
         - Validate Configuration Settings: docs/elasticbeanstalk_validate_configuration_settings.md
-      Elastic Inference (elasticinference):
-        - Client: docs/elasticinference.md
-        - Describe Accelerator Offerings: docs/elasticinference_describe_accelerator_offerings.md
-        - Describe Accelerator Types: docs/elasticinference_describe_accelerator_types.md
-        - Describe Accelerators: docs/elasticinference_describe_accelerators.md
-        - List Tags For Resource: docs/elasticinference_list_tags_for_resource.md
-        - Tag Resource: docs/elasticinference_tag_resource.md
-        - Untag Resource: docs/elasticinference_untag_resource.md
       Elastic Search Service (elasticsearchservice):
         - Client: docs/elasticsearchservice.md
         - Accept Inbound Cross Cluster Search Connection: docs/elasticsearchservice_accept_inbound_cross_cluster_search_connection.md
@@ -8283,14 +8288,18 @@ nav:
         - Describe Rule Group: docs/networkfirewall_describe_rule_group.md
         - Describe Tls Inspection Configuration: docs/networkfirewall_describe_tls_inspection_configuration.md
         - Disassociate Subnets: docs/networkfirewall_disassociate_subnets.md
+        - Get Analysis Report Results: docs/networkfirewall_get_analysis_report_results.md
+        - List Analysis Reports: docs/networkfirewall_list_analysis_reports.md
         - List Firewall Policies: docs/networkfirewall_list_firewall_policies.md
         - List Firewalls: docs/networkfirewall_list_firewalls.md
         - List Rule Groups: docs/networkfirewall_list_rule_groups.md
         - List Tags For Resource: docs/networkfirewall_list_tags_for_resource.md
         - List Tls Inspection Configurations: docs/networkfirewall_list_tls_inspection_configurations.md
         - Put Resource Policy: docs/networkfirewall_put_resource_policy.md
+        - Start Analysis Report: docs/networkfirewall_start_analysis_report.md
         - Tag Resource: docs/networkfirewall_tag_resource.md
         - Untag Resource: docs/networkfirewall_untag_resource.md
+        - Update Firewall Analysis Settings: docs/networkfirewall_update_firewall_analysis_settings.md
         - Update Firewall Delete Protection: docs/networkfirewall_update_firewall_delete_protection.md
         - Update Firewall Description: docs/networkfirewall_update_firewall_description.md
         - Update Firewall Encryption Configuration: docs/networkfirewall_update_firewall_encryption_configuration.md
@@ -10718,6 +10727,34 @@ nav:
         - List Endpoints: docs/s3outposts_list_endpoints.md
         - List Outposts With S3: docs/s3outposts_list_outposts_with_s3.md
         - List Shared Endpoints: docs/s3outposts_list_shared_endpoints.md
+      Simple Storage Service Tables (s3tables):
+        - Client: docs/s3tables.md
+        - Create Namespace: docs/s3tables_create_namespace.md
+        - Create Table Bucket: docs/s3tables_create_table_bucket.md
+        - Create Table: docs/s3tables_create_table.md
+        - Delete Namespace: docs/s3tables_delete_namespace.md
+        - Delete Table Bucket Policy: docs/s3tables_delete_table_bucket_policy.md
+        - Delete Table Bucket: docs/s3tables_delete_table_bucket.md
+        - Delete Table Policy: docs/s3tables_delete_table_policy.md
+        - Delete Table: docs/s3tables_delete_table.md
+        - Get Namespace: docs/s3tables_get_namespace.md
+        - Get Table Bucket Maintenance Configuration: docs/s3tables_get_table_bucket_maintenance_configuration.md
+        - Get Table Bucket Policy: docs/s3tables_get_table_bucket_policy.md
+        - Get Table Bucket: docs/s3tables_get_table_bucket.md
+        - Get Table Maintenance Configuration: docs/s3tables_get_table_maintenance_configuration.md
+        - Get Table Maintenance Job Status: docs/s3tables_get_table_maintenance_job_status.md
+        - Get Table Metadata Location: docs/s3tables_get_table_metadata_location.md
+        - Get Table Policy: docs/s3tables_get_table_policy.md
+        - Get Table: docs/s3tables_get_table.md
+        - List Namespaces: docs/s3tables_list_namespaces.md
+        - List Table Buckets: docs/s3tables_list_table_buckets.md
+        - List Tables: docs/s3tables_list_tables.md
+        - Put Table Bucket Maintenance Configuration: docs/s3tables_put_table_bucket_maintenance_configuration.md
+        - Put Table Bucket Policy: docs/s3tables_put_table_bucket_policy.md
+        - Put Table Maintenance Configuration: docs/s3tables_put_table_maintenance_configuration.md
+        - Put Table Policy: docs/s3tables_put_table_policy.md
+        - Rename Table: docs/s3tables_rename_table.md
+        - Update Table Metadata Location: docs/s3tables_update_table_metadata_location.md
       Sagemaker (sagemaker):
         - Client: docs/sagemaker.md
         - Add Association: docs/sagemaker_add_association.md
@@ -11605,6 +11642,7 @@ nav:
         - Put Account Sending Attributes: docs/sesv2_put_account_sending_attributes.md
         - Put Account Suppression Attributes: docs/sesv2_put_account_suppression_attributes.md
         - Put Account Vdm Attributes: docs/sesv2_put_account_vdm_attributes.md
+        - Put Configuration Set Archiving Options: docs/sesv2_put_configuration_set_archiving_options.md
         - Put Configuration Set Delivery Options: docs/sesv2_put_configuration_set_delivery_options.md
         - Put Configuration Set Reputation Options: docs/sesv2_put_configuration_set_reputation_options.md
         - Put Configuration Set Sending Options: docs/sesv2_put_configuration_set_sending_options.md
@@ -12132,6 +12170,7 @@ nav:
         - Associate File System: docs/storagegateway_associate_file_system.md
         - Attach Volume: docs/storagegateway_attach_volume.md
         - Cancel Archival: docs/storagegateway_cancel_archival.md
+        - Cancel Cache Report: docs/storagegateway_cancel_cache_report.md
         - Cancel Retrieval: docs/storagegateway_cancel_retrieval.md
         - Create Cachedi Scsi Volume: docs/storagegateway_create_cachedi_scsi_volume.md
         - Create Nfs File Share: docs/storagegateway_create_nfs_file_share.md
@@ -12144,6 +12183,7 @@ nav:
         - Create Tapes: docs/storagegateway_create_tapes.md
         - Delete Automatic Tape Creation Policy: docs/storagegateway_delete_automatic_tape_creation_policy.md
         - Delete Bandwidth Rate Limit: docs/storagegateway_delete_bandwidth_rate_limit.md
+        - Delete Cache Report: docs/storagegateway_delete_cache_report.md
         - Delete Chap Credentials: docs/storagegateway_delete_chap_credentials.md
         - Delete File Share: docs/storagegateway_delete_file_share.md
         - Delete Gateway: docs/storagegateway_delete_gateway.md
@@ -12155,6 +12195,7 @@ nav:
         - Describe Availability Monitor Test: docs/storagegateway_describe_availability_monitor_test.md
         - Describe Bandwidth Rate Limit Schedule: docs/storagegateway_describe_bandwidth_rate_limit_schedule.md
         - Describe Bandwidth Rate Limit: docs/storagegateway_describe_bandwidth_rate_limit.md
+        - Describe Cache Report: docs/storagegateway_describe_cache_report.md
         - Describe Cache: docs/storagegateway_describe_cache.md
         - Describe Cachedi Scsi Volumes: docs/storagegateway_describe_cachedi_scsi_volumes.md
         - Describe Chap Credentials: docs/storagegateway_describe_chap_credentials.md
@@ -12177,6 +12218,7 @@ nav:
         - Disassociate File System: docs/storagegateway_disassociate_file_system.md
         - Join Domain: docs/storagegateway_join_domain.md
         - List Automatic Tape Creation Policies: docs/storagegateway_list_automatic_tape_creation_policies.md
+        - List Cache Reports: docs/storagegateway_list_cache_reports.md
         - List File Shares: docs/storagegateway_list_file_shares.md
         - List File System Associations: docs/storagegateway_list_file_system_associations.md
         - List Gateways: docs/storagegateway_list_gateways.md
@@ -12197,6 +12239,7 @@ nav:
         - Set Smb Guest Password: docs/storagegateway_set_smb_guest_password.md
         - Shutdown Gateway: docs/storagegateway_shutdown_gateway.md
         - Start Availability Monitor Test: docs/storagegateway_start_availability_monitor_test.md
+        - Start Cache Report: docs/storagegateway_start_cache_report.md
         - Start Gateway: docs/storagegateway_start_gateway.md
         - Update Automatic Tape Creation Policy: docs/storagegateway_update_automatic_tape_creation_policy.md
         - Update Bandwidth Rate Limit Schedule: docs/storagegateway_update_bandwidth_rate_limit_schedule.md
@@ -13259,6 +13302,7 @@ nav:
       - Code Of Conduct: developer_guide/CODE_OF_CONDUCT.md
       - Cheat Sheet: developer_guide/cheat_sheet.pdf
   - Code Examples:
+      - Aws Nova Background Generation Guide: examples/aws_nova_background_generation_guide.md
       - Batch: examples/batch.md
       - Comprehend: examples/comprehend.md
       - Detecting Labels In An Image: examples/detecting_labels_in_an_image.md
