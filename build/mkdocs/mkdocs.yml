@@ -1,4 +1,4 @@
-site_name: 'paws: 0.9.0'
+site_name: 'paws: 0.10.0'
 theme:
   name: material
   logo: logo.png
@@ -90,11 +90,13 @@ nav:
         - Delete Alternate Contact: docs/account_delete_alternate_contact.md
         - Disable Region: docs/account_disable_region.md
         - Enable Region: docs/account_enable_region.md
+        - Get Account Information: docs/account_get_account_information.md
         - Get Alternate Contact: docs/account_get_alternate_contact.md
         - Get Contact Information: docs/account_get_contact_information.md
         - Get Primary Email: docs/account_get_primary_email.md
         - Get Region Opt Status: docs/account_get_region_opt_status.md
         - List Regions: docs/account_list_regions.md
+        - Put Account Name: docs/account_put_account_name.md
         - Put Alternate Contact: docs/account_put_alternate_contact.md
         - Put Contact Information: docs/account_put_contact_information.md
         - Start Primary Email Update: docs/account_start_primary_email_update.md
@@ -976,18 +978,23 @@ nav:
         - Client: docs/batch.md
         - Cancel Job: docs/batch_cancel_job.md
         - Create Compute Environment: docs/batch_create_compute_environment.md
+        - Create Consumable Resource: docs/batch_create_consumable_resource.md
         - Create Job Queue: docs/batch_create_job_queue.md
         - Create Scheduling Policy: docs/batch_create_scheduling_policy.md
         - Delete Compute Environment: docs/batch_delete_compute_environment.md
+        - Delete Consumable Resource: docs/batch_delete_consumable_resource.md
         - Delete Job Queue: docs/batch_delete_job_queue.md
         - Delete Scheduling Policy: docs/batch_delete_scheduling_policy.md
         - Deregister Job Definition: docs/batch_deregister_job_definition.md
         - Describe Compute Environments: docs/batch_describe_compute_environments.md
+        - Describe Consumable Resource: docs/batch_describe_consumable_resource.md
         - Describe Job Definitions: docs/batch_describe_job_definitions.md
         - Describe Job Queues: docs/batch_describe_job_queues.md
         - Describe Jobs: docs/batch_describe_jobs.md
         - Describe Scheduling Policies: docs/batch_describe_scheduling_policies.md
         - Get Job Queue Snapshot: docs/batch_get_job_queue_snapshot.md
+        - List Consumable Resources: docs/batch_list_consumable_resources.md
+        - List Jobs By Consumable Resource: docs/batch_list_jobs_by_consumable_resource.md
         - List Jobs: docs/batch_list_jobs.md
         - List Scheduling Policies: docs/batch_list_scheduling_policies.md
         - List Tags For Resource: docs/batch_list_tags_for_resource.md
@@ -997,6 +1004,7 @@ nav:
         - Terminate Job: docs/batch_terminate_job.md
         - Untag Resource: docs/batch_untag_resource.md
         - Update Compute Environment: docs/batch_update_compute_environment.md
+        - Update Consumable Resource: docs/batch_update_consumable_resource.md
         - Update Job Queue: docs/batch_update_job_queue.md
         - Update Scheduling Policy: docs/batch_update_scheduling_policy.md
       Bedrock (bedrock):
@@ -1011,6 +1019,7 @@ nav:
         - Create Model Customization Job: docs/bedrock_create_model_customization_job.md
         - Create Model Import Job: docs/bedrock_create_model_import_job.md
         - Create Model Invocation Job: docs/bedrock_create_model_invocation_job.md
+        - Create Prompt Router: docs/bedrock_create_prompt_router.md
         - Create Provisioned Model Throughput: docs/bedrock_create_provisioned_model_throughput.md
         - Delete Custom Model: docs/bedrock_delete_custom_model.md
         - Delete Guardrail: docs/bedrock_delete_guardrail.md
@@ -1018,6 +1027,7 @@ nav:
         - Delete Inference Profile: docs/bedrock_delete_inference_profile.md
         - Delete Marketplace Model Endpoint: docs/bedrock_delete_marketplace_model_endpoint.md
         - Delete Model Invocation Logging Configuration: docs/bedrock_delete_model_invocation_logging_configuration.md
+        - Delete Prompt Router: docs/bedrock_delete_prompt_router.md
         - Delete Provisioned Model Throughput: docs/bedrock_delete_provisioned_model_throughput.md
         - Deregister Marketplace Model Endpoint: docs/bedrock_deregister_marketplace_model_endpoint.md
         - Get Custom Model: docs/bedrock_get_custom_model.md
@@ -1134,17 +1144,31 @@ nav:
         - Validate Flow Definition: docs/bedrockagent_validate_flow_definition.md
       Agents for Amazon Bedrock Runtime (bedrockagentruntime):
         - Client: docs/bedrockagentruntime.md
+        - Create Invocation: docs/bedrockagentruntime_create_invocation.md
+        - Create Session: docs/bedrockagentruntime_create_session.md
         - Delete Agent Memory: docs/bedrockagentruntime_delete_agent_memory.md
+        - Delete Session: docs/bedrockagentruntime_delete_session.md
+        - End Session: docs/bedrockagentruntime_end_session.md
         - Generate Query: docs/bedrockagentruntime_generate_query.md
         - Get Agent Memory: docs/bedrockagentruntime_get_agent_memory.md
+        - Get Invocation Step: docs/bedrockagentruntime_get_invocation_step.md
+        - Get Session: docs/bedrockagentruntime_get_session.md
         - Invoke Agent: docs/bedrockagentruntime_invoke_agent.md
         - Invoke Flow: docs/bedrockagentruntime_invoke_flow.md
         - Invoke Inline Agent: docs/bedrockagentruntime_invoke_inline_agent.md
+        - List Invocation Steps: docs/bedrockagentruntime_list_invocation_steps.md
+        - List Invocations: docs/bedrockagentruntime_list_invocations.md
+        - List Sessions: docs/bedrockagentruntime_list_sessions.md
+        - List Tags For Resource: docs/bedrockagentruntime_list_tags_for_resource.md
         - Optimize Prompt: docs/bedrockagentruntime_optimize_prompt.md
+        - Put Invocation Step: docs/bedrockagentruntime_put_invocation_step.md
         - Rerank: docs/bedrockagentruntime_rerank.md
         - Retrieve And Generate Stream: docs/bedrockagentruntime_retrieve_and_generate_stream.md
         - Retrieve And Generate: docs/bedrockagentruntime_retrieve_and_generate.md
         - Retrieve: docs/bedrockagentruntime_retrieve.md
+        - Tag Resource: docs/bedrockagentruntime_tag_resource.md
+        - Untag Resource: docs/bedrockagentruntime_untag_resource.md
+        - Update Session: docs/bedrockagentruntime_update_session.md
       Data Automation for Amazon Bedrock (bedrockdataautomation):
         - Client: docs/bedrockdataautomation.md
         - Create Blueprint Version: docs/bedrockdataautomation_create_blueprint_version.md
@@ -1156,18 +1180,25 @@ nav:
         - Get Data Automation Project: docs/bedrockdataautomation_get_data_automation_project.md
         - List Blueprints: docs/bedrockdataautomation_list_blueprints.md
         - List Data Automation Projects: docs/bedrockdataautomation_list_data_automation_projects.md
+        - List Tags For Resource: docs/bedrockdataautomation_list_tags_for_resource.md
+        - Tag Resource: docs/bedrockdataautomation_tag_resource.md
+        - Untag Resource: docs/bedrockdataautomation_untag_resource.md
         - Update Blueprint: docs/bedrockdataautomation_update_blueprint.md
         - Update Data Automation Project: docs/bedrockdataautomation_update_data_automation_project.md
       Data Automation for Amazon Bedrock Runtime (bedrockdataautomationruntime):
         - Client: docs/bedrockdataautomationruntime.md
         - Get Data Automation Status: docs/bedrockdataautomationruntime_get_data_automation_status.md
         - Invoke Data Automation Async: docs/bedrockdataautomationruntime_invoke_data_automation_async.md
+        - List Tags For Resource: docs/bedrockdataautomationruntime_list_tags_for_resource.md
+        - Tag Resource: docs/bedrockdataautomationruntime_tag_resource.md
+        - Untag Resource: docs/bedrockdataautomationruntime_untag_resource.md
       Bedrock Runtime (bedrockruntime):
         - Client: docs/bedrockruntime.md
         - Apply Guardrail: docs/bedrockruntime_apply_guardrail.md
         - Converse Stream: docs/bedrockruntime_converse_stream.md
         - Converse: docs/bedrockruntime_converse.md
         - Get Async Invoke: docs/bedrockruntime_get_async_invoke.md
+        - Invoke Model With Bidirectional Stream: docs/bedrockruntime_invoke_model_with_bidirectional_stream.md
         - Invoke Model With Response Stream: docs/bedrockruntime_invoke_model_with_response_stream.md
         - Invoke Model: docs/bedrockruntime_invoke_model.md
         - List Async Invokes: docs/bedrockruntime_list_async_invokes.md
@@ -1543,16 +1574,21 @@ nav:
       Cloud Front (cloudfront):
         - Client: docs/cloudfront.md
         - Associate Alias: docs/cloudfront_associate_alias.md
+        - Associate Distribution Tenant Web Acl: docs/cloudfront_associate_distribution_tenant_web_acl.md
+        - Associate Distribution Web Acl: docs/cloudfront_associate_distribution_web_acl.md
         - Copy Distribution: docs/cloudfront_copy_distribution.md
         - Create Anycast Ip List: docs/cloudfront_create_anycast_ip_list.md
         - Create Cache Policy: docs/cloudfront_create_cache_policy.md
         - Create Cloud Front Origin Access Identity: docs/cloudfront_create_cloud_front_origin_access_identity.md
+        - Create Connection Group: docs/cloudfront_create_connection_group.md
         - Create Continuous Deployment Policy: docs/cloudfront_create_continuous_deployment_policy.md
+        - Create Distribution Tenant: docs/cloudfront_create_distribution_tenant.md
         - Create Distribution With Tags: docs/cloudfront_create_distribution_with_tags.md
         - Create Distribution: docs/cloudfront_create_distribution.md
         - Create Field Level Encryption Config: docs/cloudfront_create_field_level_encryption_config.md
         - Create Field Level Encryption Profile: docs/cloudfront_create_field_level_encryption_profile.md
         - Create Function: docs/cloudfront_create_function.md
+        - Create Invalidation For Distribution Tenant: docs/cloudfront_create_invalidation_for_distribution_tenant.md
         - Create Invalidation: docs/cloudfront_create_invalidation.md
         - Create Key Group: docs/cloudfront_create_key_group.md
         - Create Key Value Store: docs/cloudfront_create_key_value_store.md
@@ -1568,7 +1604,9 @@ nav:
         - Delete Anycast Ip List: docs/cloudfront_delete_anycast_ip_list.md
         - Delete Cache Policy: docs/cloudfront_delete_cache_policy.md
         - Delete Cloud Front Origin Access Identity: docs/cloudfront_delete_cloud_front_origin_access_identity.md
+        - Delete Connection Group: docs/cloudfront_delete_connection_group.md
         - Delete Continuous Deployment Policy: docs/cloudfront_delete_continuous_deployment_policy.md
+        - Delete Distribution Tenant: docs/cloudfront_delete_distribution_tenant.md
         - Delete Distribution: docs/cloudfront_delete_distribution.md
         - Delete Field Level Encryption Config: docs/cloudfront_delete_field_level_encryption_config.md
         - Delete Field Level Encryption Profile: docs/cloudfront_delete_field_level_encryption_profile.md
@@ -1585,23 +1623,31 @@ nav:
         - Delete Vpc Origin: docs/cloudfront_delete_vpc_origin.md
         - Describe Function: docs/cloudfront_describe_function.md
         - Describe Key Value Store: docs/cloudfront_describe_key_value_store.md
+        - Disassociate Distribution Tenant Web Acl: docs/cloudfront_disassociate_distribution_tenant_web_acl.md
+        - Disassociate Distribution Web Acl: docs/cloudfront_disassociate_distribution_web_acl.md
         - Get Anycast Ip List: docs/cloudfront_get_anycast_ip_list.md
         - Get Cache Policy Config: docs/cloudfront_get_cache_policy_config.md
         - Get Cache Policy: docs/cloudfront_get_cache_policy.md
         - Get Cloud Front Origin Access Identity Config: docs/cloudfront_get_cloud_front_origin_access_identity_config.md
         - Get Cloud Front Origin Access Identity: docs/cloudfront_get_cloud_front_origin_access_identity.md
+        - Get Connection Group By Routing Endpoint: docs/cloudfront_get_connection_group_by_routing_endpoint.md
+        - Get Connection Group: docs/cloudfront_get_connection_group.md
         - Get Continuous Deployment Policy Config: docs/cloudfront_get_continuous_deployment_policy_config.md
         - Get Continuous Deployment Policy: docs/cloudfront_get_continuous_deployment_policy.md
         - Get Distribution Config: docs/cloudfront_get_distribution_config.md
+        - Get Distribution Tenant By Domain: docs/cloudfront_get_distribution_tenant_by_domain.md
+        - Get Distribution Tenant: docs/cloudfront_get_distribution_tenant.md
         - Get Distribution: docs/cloudfront_get_distribution.md
         - Get Field Level Encryption Config: docs/cloudfront_get_field_level_encryption_config.md
         - Get Field Level Encryption Profile Config: docs/cloudfront_get_field_level_encryption_profile_config.md
         - Get Field Level Encryption Profile: docs/cloudfront_get_field_level_encryption_profile.md
         - Get Field Level Encryption: docs/cloudfront_get_field_level_encryption.md
         - Get Function: docs/cloudfront_get_function.md
+        - Get Invalidation For Distribution Tenant: docs/cloudfront_get_invalidation_for_distribution_tenant.md
         - Get Invalidation: docs/cloudfront_get_invalidation.md
         - Get Key Group Config: docs/cloudfront_get_key_group_config.md
         - Get Key Group: docs/cloudfront_get_key_group.md
+        - Get Managed Certificate Details: docs/cloudfront_get_managed_certificate_details.md
         - Get Monitoring Subscription: docs/cloudfront_get_monitoring_subscription.md
         - Get Origin Access Control Config: docs/cloudfront_get_origin_access_control_config.md
         - Get Origin Access Control: docs/cloudfront_get_origin_access_control.md
@@ -1619,9 +1665,13 @@ nav:
         - List Cache Policies: docs/cloudfront_list_cache_policies.md
         - List Cloud Front Origin Access Identities: docs/cloudfront_list_cloud_front_origin_access_identities.md
         - List Conflicting Aliases: docs/cloudfront_list_conflicting_aliases.md
+        - List Connection Groups: docs/cloudfront_list_connection_groups.md
         - List Continuous Deployment Policies: docs/cloudfront_list_continuous_deployment_policies.md
+        - List Distribution Tenants By Customization: docs/cloudfront_list_distribution_tenants_by_customization.md
+        - List Distribution Tenants: docs/cloudfront_list_distribution_tenants.md
         - List Distributions By Anycast Ip List Id: docs/cloudfront_list_distributions_by_anycast_ip_list_id.md
         - List Distributions By Cache Policy Id: docs/cloudfront_list_distributions_by_cache_policy_id.md
+        - List Distributions By Connection Mode: docs/cloudfront_list_distributions_by_connection_mode.md
         - List Distributions By Key Group: docs/cloudfront_list_distributions_by_key_group.md
         - List Distributions By Origin Request Policy Id: docs/cloudfront_list_distributions_by_origin_request_policy_id.md
         - List Distributions By Realtime Log Config: docs/cloudfront_list_distributions_by_realtime_log_config.md
@@ -1629,9 +1679,11 @@ nav:
         - List Distributions By Vpc Origin Id: docs/cloudfront_list_distributions_by_vpc_origin_id.md
         - List Distributions By Web Acl Id: docs/cloudfront_list_distributions_by_web_acl_id.md
         - List Distributions: docs/cloudfront_list_distributions.md
+        - List Domain Conflicts: docs/cloudfront_list_domain_conflicts.md
         - List Field Level Encryption Configs: docs/cloudfront_list_field_level_encryption_configs.md
         - List Field Level Encryption Profiles: docs/cloudfront_list_field_level_encryption_profiles.md
         - List Functions: docs/cloudfront_list_functions.md
+        - List Invalidations For Distribution Tenant: docs/cloudfront_list_invalidations_for_distribution_tenant.md
         - List Invalidations: docs/cloudfront_list_invalidations.md
         - List Key Groups: docs/cloudfront_list_key_groups.md
         - List Key Value Stores: docs/cloudfront_list_key_value_stores.md
@@ -1649,9 +1701,12 @@ nav:
         - Untag Resource: docs/cloudfront_untag_resource.md
         - Update Cache Policy: docs/cloudfront_update_cache_policy.md
         - Update Cloud Front Origin Access Identity: docs/cloudfront_update_cloud_front_origin_access_identity.md
+        - Update Connection Group: docs/cloudfront_update_connection_group.md
         - Update Continuous Deployment Policy: docs/cloudfront_update_continuous_deployment_policy.md
+        - Update Distribution Tenant: docs/cloudfront_update_distribution_tenant.md
         - Update Distribution With Staging Config: docs/cloudfront_update_distribution_with_staging_config.md
         - Update Distribution: docs/cloudfront_update_distribution.md
+        - Update Domain Association: docs/cloudfront_update_domain_association.md
         - Update Field Level Encryption Config: docs/cloudfront_update_field_level_encryption_config.md
         - Update Field Level Encryption Profile: docs/cloudfront_update_field_level_encryption_profile.md
         - Update Function: docs/cloudfront_update_function.md
@@ -1664,6 +1719,7 @@ nav:
         - Update Response Headers Policy: docs/cloudfront_update_response_headers_policy.md
         - Update Streaming Distribution: docs/cloudfront_update_streaming_distribution.md
         - Update Vpc Origin: docs/cloudfront_update_vpc_origin.md
+        - Verify Dns Configuration: docs/cloudfront_verify_dns_configuration.md
       Cloud Front Key Value Store (cloudfrontkeyvaluestore):
         - Client: docs/cloudfrontkeyvaluestore.md
         - Delete Key: docs/cloudfrontkeyvaluestore_delete_key.md
@@ -1852,12 +1908,14 @@ nav:
       Amazon CloudWatch Application Signals (cloudwatchapplicationsignals):
         - Client: docs/cloudwatchapplicationsignals.md
         - Batch Get Service Level Objective Budget Report: docs/cloudwatchapplicationsignals_batch_get_service_level_objective_budget_report.md
+        - Batch Update Exclusion Windows: docs/cloudwatchapplicationsignals_batch_update_exclusion_windows.md
         - Create Service Level Objective: docs/cloudwatchapplicationsignals_create_service_level_objective.md
         - Delete Service Level Objective: docs/cloudwatchapplicationsignals_delete_service_level_objective.md
         - Get Service Level Objective: docs/cloudwatchapplicationsignals_get_service_level_objective.md
         - Get Service: docs/cloudwatchapplicationsignals_get_service.md
         - List Service Dependencies: docs/cloudwatchapplicationsignals_list_service_dependencies.md
         - List Service Dependents: docs/cloudwatchapplicationsignals_list_service_dependents.md
+        - List Service Level Objective Exclusion Windows: docs/cloudwatchapplicationsignals_list_service_level_objective_exclusion_windows.md
         - List Service Level Objectives: docs/cloudwatchapplicationsignals_list_service_level_objectives.md
         - List Service Operations: docs/cloudwatchapplicationsignals_list_service_operations.md
         - List Services: docs/cloudwatchapplicationsignals_list_services.md
@@ -1985,6 +2043,7 @@ nav:
         - List Integrations: docs/cloudwatchlogs_list_integrations.md
         - List Log Anomaly Detectors: docs/cloudwatchlogs_list_log_anomaly_detectors.md
         - List Log Groups For Query: docs/cloudwatchlogs_list_log_groups_for_query.md
+        - List Log Groups: docs/cloudwatchlogs_list_log_groups.md
         - List Tags For Resource: docs/cloudwatchlogs_list_tags_for_resource.md
         - List Tags Log Group: docs/cloudwatchlogs_list_tags_log_group.md
         - Put Account Policy: docs/cloudwatchlogs_put_account_policy.md
@@ -2039,12 +2098,15 @@ nav:
         - Batch Get Rum Metric Definitions: docs/cloudwatchrum_batch_get_rum_metric_definitions.md
         - Create App Monitor: docs/cloudwatchrum_create_app_monitor.md
         - Delete App Monitor: docs/cloudwatchrum_delete_app_monitor.md
+        - Delete Resource Policy: docs/cloudwatchrum_delete_resource_policy.md
         - Delete Rum Metrics Destination: docs/cloudwatchrum_delete_rum_metrics_destination.md
         - Get App Monitor Data: docs/cloudwatchrum_get_app_monitor_data.md
         - Get App Monitor: docs/cloudwatchrum_get_app_monitor.md
+        - Get Resource Policy: docs/cloudwatchrum_get_resource_policy.md
         - List App Monitors: docs/cloudwatchrum_list_app_monitors.md
         - List Rum Metrics Destinations: docs/cloudwatchrum_list_rum_metrics_destinations.md
         - List Tags For Resource: docs/cloudwatchrum_list_tags_for_resource.md
+        - Put Resource Policy: docs/cloudwatchrum_put_resource_policy.md
         - Put Rum Events: docs/cloudwatchrum_put_rum_events.md
         - Put Rum Metrics Destination: docs/cloudwatchrum_put_rum_metrics_destination.md
         - Tag Resource: docs/cloudwatchrum_tag_resource.md
@@ -2106,10 +2168,12 @@ nav:
         - Batch Delete Builds: docs/codebuild_batch_delete_builds.md
         - Batch Get Build Batches: docs/codebuild_batch_get_build_batches.md
         - Batch Get Builds: docs/codebuild_batch_get_builds.md
+        - Batch Get Command Executions: docs/codebuild_batch_get_command_executions.md
         - Batch Get Fleets: docs/codebuild_batch_get_fleets.md
         - Batch Get Projects: docs/codebuild_batch_get_projects.md
         - Batch Get Report Groups: docs/codebuild_batch_get_report_groups.md
         - Batch Get Reports: docs/codebuild_batch_get_reports.md
+        - Batch Get Sandboxes: docs/codebuild_batch_get_sandboxes.md
         - Create Fleet: docs/codebuild_create_fleet.md
         - Create Project: docs/codebuild_create_project.md
         - Create Report Group: docs/codebuild_create_report_group.md
@@ -2132,12 +2196,15 @@ nav:
         - List Build Batches: docs/codebuild_list_build_batches.md
         - List Builds For Project: docs/codebuild_list_builds_for_project.md
         - List Builds: docs/codebuild_list_builds.md
+        - List Command Executions For Sandbox: docs/codebuild_list_command_executions_for_sandbox.md
         - List Curated Environment Images: docs/codebuild_list_curated_environment_images.md
         - List Fleets: docs/codebuild_list_fleets.md
         - List Projects: docs/codebuild_list_projects.md
         - List Report Groups: docs/codebuild_list_report_groups.md
         - List Reports For Report Group: docs/codebuild_list_reports_for_report_group.md
         - List Reports: docs/codebuild_list_reports.md
+        - List Sandboxes For Project: docs/codebuild_list_sandboxes_for_project.md
+        - List Sandboxes: docs/codebuild_list_sandboxes.md
         - List Shared Projects: docs/codebuild_list_shared_projects.md
         - List Shared Report Groups: docs/codebuild_list_shared_report_groups.md
         - List Source Credentials: docs/codebuild_list_source_credentials.md
@@ -2146,8 +2213,12 @@ nav:
         - Retry Build: docs/codebuild_retry_build.md
         - Start Build Batch: docs/codebuild_start_build_batch.md
         - Start Build: docs/codebuild_start_build.md
+        - Start Command Execution: docs/codebuild_start_command_execution.md
+        - Start Sandbox Connection: docs/codebuild_start_sandbox_connection.md
+        - Start Sandbox: docs/codebuild_start_sandbox.md
         - Stop Build Batch: docs/codebuild_stop_build_batch.md
         - Stop Build: docs/codebuild_stop_build.md
+        - Stop Sandbox: docs/codebuild_stop_sandbox.md
         - Update Fleet: docs/codebuild_update_fleet.md
         - Update Project Visibility: docs/codebuild_update_project_visibility.md
         - Update Project: docs/codebuild_update_project.md
@@ -2592,6 +2663,7 @@ nav:
         - Get Identity Provider By Identifier: docs/cognitoidentityprovider_get_identity_provider_by_identifier.md
         - Get Log Delivery Configuration: docs/cognitoidentityprovider_get_log_delivery_configuration.md
         - Get Signing Certificate: docs/cognitoidentityprovider_get_signing_certificate.md
+        - Get Tokens From Refresh Token: docs/cognitoidentityprovider_get_tokens_from_refresh_token.md
         - Get Ui Customization: docs/cognitoidentityprovider_get_ui_customization.md
         - Get User Attribute Verification Code: docs/cognitoidentityprovider_get_user_attribute_verification_code.md
         - Get User Auth Factors: docs/cognitoidentityprovider_get_user_auth_factors.md
@@ -4146,6 +4218,7 @@ nav:
         - Associate Ipam Byoasn: docs/ec2_associate_ipam_byoasn.md
         - Associate Ipam Resource Discovery: docs/ec2_associate_ipam_resource_discovery.md
         - Associate Nat Gateway Address: docs/ec2_associate_nat_gateway_address.md
+        - Associate Route Server: docs/ec2_associate_route_server.md
         - Associate Route Table: docs/ec2_associate_route_table.md
         - Associate Security Group Vpc: docs/ec2_associate_security_group_vpc.md
         - Associate Subnet Cidr Block: docs/ec2_associate_subnet_cidr_block.md
@@ -4212,6 +4285,8 @@ nav:
         - Create Local Gateway Route Table Vpc Association: docs/ec2_create_local_gateway_route_table_vpc_association.md
         - Create Local Gateway Route Table: docs/ec2_create_local_gateway_route_table.md
         - Create Local Gateway Route: docs/ec2_create_local_gateway_route.md
+        - Create Local Gateway Virtual Interface Group: docs/ec2_create_local_gateway_virtual_interface_group.md
+        - Create Local Gateway Virtual Interface: docs/ec2_create_local_gateway_virtual_interface.md
         - Create Managed Prefix List: docs/ec2_create_managed_prefix_list.md
         - Create Nat Gateway: docs/ec2_create_nat_gateway.md
         - Create Network Acl Entry: docs/ec2_create_network_acl_entry.md
@@ -4225,6 +4300,9 @@ nav:
         - Create Replace Root Volume Task: docs/ec2_create_replace_root_volume_task.md
         - Create Reserved Instances Listing: docs/ec2_create_reserved_instances_listing.md
         - Create Restore Image Task: docs/ec2_create_restore_image_task.md
+        - Create Route Server Endpoint: docs/ec2_create_route_server_endpoint.md
+        - Create Route Server Peer: docs/ec2_create_route_server_peer.md
+        - Create Route Server: docs/ec2_create_route_server.md
         - Create Route Table: docs/ec2_create_route_table.md
         - Create Route: docs/ec2_create_route.md
         - Create Security Group: docs/ec2_create_security_group.md
@@ -4290,6 +4368,8 @@ nav:
         - Delete Local Gateway Route Table Vpc Association: docs/ec2_delete_local_gateway_route_table_vpc_association.md
         - Delete Local Gateway Route Table: docs/ec2_delete_local_gateway_route_table.md
         - Delete Local Gateway Route: docs/ec2_delete_local_gateway_route.md
+        - Delete Local Gateway Virtual Interface Group: docs/ec2_delete_local_gateway_virtual_interface_group.md
+        - Delete Local Gateway Virtual Interface: docs/ec2_delete_local_gateway_virtual_interface.md
         - Delete Managed Prefix List: docs/ec2_delete_managed_prefix_list.md
         - Delete Nat Gateway: docs/ec2_delete_nat_gateway.md
         - Delete Network Acl Entry: docs/ec2_delete_network_acl_entry.md
@@ -4303,6 +4383,9 @@ nav:
         - Delete Placement Group: docs/ec2_delete_placement_group.md
         - Delete Public Ipv 4 Pool: docs/ec2_delete_public_ipv_4_pool.md
         - Delete Queued Reserved Instances: docs/ec2_delete_queued_reserved_instances.md
+        - Delete Route Server Endpoint: docs/ec2_delete_route_server_endpoint.md
+        - Delete Route Server Peer: docs/ec2_delete_route_server_peer.md
+        - Delete Route Server: docs/ec2_delete_route_server.md
         - Delete Route Table: docs/ec2_delete_route_table.md
         - Delete Route: docs/ec2_delete_route.md
         - Delete Security Group: docs/ec2_delete_security_group.md
@@ -4439,6 +4522,7 @@ nav:
         - Describe Network Interface Attribute: docs/ec2_describe_network_interface_attribute.md
         - Describe Network Interface Permissions: docs/ec2_describe_network_interface_permissions.md
         - Describe Network Interfaces: docs/ec2_describe_network_interfaces.md
+        - Describe Outpost Lags: docs/ec2_describe_outpost_lags.md
         - Describe Placement Groups: docs/ec2_describe_placement_groups.md
         - Describe Prefix Lists: docs/ec2_describe_prefix_lists.md
         - Describe Principal Id Format: docs/ec2_describe_principal_id_format.md
@@ -4449,6 +4533,9 @@ nav:
         - Describe Reserved Instances Modifications: docs/ec2_describe_reserved_instances_modifications.md
         - Describe Reserved Instances Offerings: docs/ec2_describe_reserved_instances_offerings.md
         - Describe Reserved Instances: docs/ec2_describe_reserved_instances.md
+        - Describe Route Server Endpoints: docs/ec2_describe_route_server_endpoints.md
+        - Describe Route Server Peers: docs/ec2_describe_route_server_peers.md
+        - Describe Route Servers: docs/ec2_describe_route_servers.md
         - Describe Route Tables: docs/ec2_describe_route_tables.md
         - Describe Scheduled Instance Availability: docs/ec2_describe_scheduled_instance_availability.md
         - Describe Scheduled Instances: docs/ec2_describe_scheduled_instances.md
@@ -4456,6 +4543,7 @@ nav:
         - Describe Security Group Rules: docs/ec2_describe_security_group_rules.md
         - Describe Security Group Vpc Associations: docs/ec2_describe_security_group_vpc_associations.md
         - Describe Security Groups: docs/ec2_describe_security_groups.md
+        - Describe Service Link Virtual Interfaces: docs/ec2_describe_service_link_virtual_interfaces.md
         - Describe Snapshot Attribute: docs/ec2_describe_snapshot_attribute.md
         - Describe Snapshot Tier Status: docs/ec2_describe_snapshot_tier_status.md
         - Describe Snapshots: docs/ec2_describe_snapshots.md
@@ -4526,6 +4614,7 @@ nav:
         - Disable Image Deregistration Protection: docs/ec2_disable_image_deregistration_protection.md
         - Disable Image: docs/ec2_disable_image.md
         - Disable Ipam Organization Admin Account: docs/ec2_disable_ipam_organization_admin_account.md
+        - Disable Route Server Propagation: docs/ec2_disable_route_server_propagation.md
         - Disable Serial Console Access: docs/ec2_disable_serial_console_access.md
         - Disable Snapshot Block Public Access: docs/ec2_disable_snapshot_block_public_access.md
         - Disable Transit Gateway Route Table Propagation: docs/ec2_disable_transit_gateway_route_table_propagation.md
@@ -4541,6 +4630,7 @@ nav:
         - Disassociate Ipam Byoasn: docs/ec2_disassociate_ipam_byoasn.md
         - Disassociate Ipam Resource Discovery: docs/ec2_disassociate_ipam_resource_discovery.md
         - Disassociate Nat Gateway Address: docs/ec2_disassociate_nat_gateway_address.md
+        - Disassociate Route Server: docs/ec2_disassociate_route_server.md
         - Disassociate Route Table: docs/ec2_disassociate_route_table.md
         - Disassociate Security Group Vpc: docs/ec2_disassociate_security_group_vpc.md
         - Disassociate Subnet Cidr Block: docs/ec2_disassociate_subnet_cidr_block.md
@@ -4561,6 +4651,7 @@ nav:
         - Enable Image: docs/ec2_enable_image.md
         - Enable Ipam Organization Admin Account: docs/ec2_enable_ipam_organization_admin_account.md
         - Enable Reachability Analyzer Organization Sharing: docs/ec2_enable_reachability_analyzer_organization_sharing.md
+        - Enable Route Server Propagation: docs/ec2_enable_route_server_propagation.md
         - Enable Serial Console Access: docs/ec2_enable_serial_console_access.md
         - Enable Snapshot Block Public Access: docs/ec2_enable_snapshot_block_public_access.md
         - Enable Transit Gateway Route Table Propagation: docs/ec2_enable_transit_gateway_route_table_propagation.md
@@ -4607,6 +4698,9 @@ nav:
         - Get Network Insights Access Scope Content: docs/ec2_get_network_insights_access_scope_content.md
         - Get Password Data: docs/ec2_get_password_data.md
         - Get Reserved Instances Exchange Quote: docs/ec2_get_reserved_instances_exchange_quote.md
+        - Get Route Server Associations: docs/ec2_get_route_server_associations.md
+        - Get Route Server Propagations: docs/ec2_get_route_server_propagations.md
+        - Get Route Server Routing Database: docs/ec2_get_route_server_routing_database.md
         - Get Security Groups For Vpc: docs/ec2_get_security_groups_for_vpc.md
         - Get Serial Console Access Status: docs/ec2_get_serial_console_access_status.md
         - Get Snapshot Block Public Access State: docs/ec2_get_snapshot_block_public_access_state.md
@@ -4669,6 +4763,7 @@ nav:
         - Modify Network Interface Attribute: docs/ec2_modify_network_interface_attribute.md
         - Modify Private Dns Name Options: docs/ec2_modify_private_dns_name_options.md
         - Modify Reserved Instances: docs/ec2_modify_reserved_instances.md
+        - Modify Route Server: docs/ec2_modify_route_server.md
         - Modify Security Group Rules: docs/ec2_modify_security_group_rules.md
         - Modify Snapshot Attribute: docs/ec2_modify_snapshot_attribute.md
         - Modify Snapshot Tier: docs/ec2_modify_snapshot_tier.md
@@ -4904,6 +4999,7 @@ nav:
         - Register Task Definition: docs/ecs_register_task_definition.md
         - Run Task: docs/ecs_run_task.md
         - Start Task: docs/ecs_start_task.md
+        - Stop Service Deployment: docs/ecs_stop_service_deployment.md
         - Stop Task: docs/ecs_stop_task.md
         - Submit Attachment State Changes: docs/ecs_submit_attachment_state_changes.md
         - Submit Container State Change: docs/ecs_submit_container_state_change.md
@@ -5258,6 +5354,7 @@ nav:
         - Get Trust Store Ca Certificates Bundle: docs/elbv2_get_trust_store_ca_certificates_bundle.md
         - Get Trust Store Revocation Content: docs/elbv2_get_trust_store_revocation_content.md
         - Modify Capacity Reservation: docs/elbv2_modify_capacity_reservation.md
+        - Modify Ip Pools: docs/elbv2_modify_ip_pools.md
         - Modify Listener Attributes: docs/elbv2_modify_listener_attributes.md
         - Modify Listener: docs/elbv2_modify_listener.md
         - Modify Load Balancer Attributes: docs/elbv2_modify_load_balancer_attributes.md
@@ -7046,6 +7143,7 @@ nav:
         - List Shards: docs/kinesis_list_shards.md
         - List Stream Consumers: docs/kinesis_list_stream_consumers.md
         - List Streams: docs/kinesis_list_streams.md
+        - List Tags For Resource: docs/kinesis_list_tags_for_resource.md
         - List Tags For Stream: docs/kinesis_list_tags_for_stream.md
         - Merge Shards: docs/kinesis_merge_shards.md
         - Put Record: docs/kinesis_put_record.md
@@ -7057,6 +7155,8 @@ nav:
         - Start Stream Encryption: docs/kinesis_start_stream_encryption.md
         - Stop Stream Encryption: docs/kinesis_stop_stream_encryption.md
         - Subscribe To Shard: docs/kinesis_subscribe_to_shard.md
+        - Tag Resource: docs/kinesis_tag_resource.md
+        - Untag Resource: docs/kinesis_untag_resource.md
         - Update Shard Count: docs/kinesis_update_shard_count.md
         - Update Stream Mode: docs/kinesis_update_stream_mode.md
       Kinesis Analytics (kinesisanalytics):
@@ -8078,6 +8178,7 @@ nav:
         - Create Tags: docs/mq_create_tags.md
         - Create User: docs/mq_create_user.md
         - Delete Broker: docs/mq_delete_broker.md
+        - Delete Configuration: docs/mq_delete_configuration.md
         - Delete Tags: docs/mq_delete_tags.md
         - Delete User: docs/mq_delete_user.md
         - Describe Broker Engine Types: docs/mq_describe_broker_engine_types.md
@@ -8282,6 +8383,7 @@ nav:
         - Delete Tls Inspection Configuration: docs/networkfirewall_delete_tls_inspection_configuration.md
         - Describe Firewall Policy: docs/networkfirewall_describe_firewall_policy.md
         - Describe Firewall: docs/networkfirewall_describe_firewall.md
+        - Describe Flow Operation: docs/networkfirewall_describe_flow_operation.md
         - Describe Logging Configuration: docs/networkfirewall_describe_logging_configuration.md
         - Describe Resource Policy: docs/networkfirewall_describe_resource_policy.md
         - Describe Rule Group Metadata: docs/networkfirewall_describe_rule_group_metadata.md
@@ -8292,11 +8394,15 @@ nav:
         - List Analysis Reports: docs/networkfirewall_list_analysis_reports.md
         - List Firewall Policies: docs/networkfirewall_list_firewall_policies.md
         - List Firewalls: docs/networkfirewall_list_firewalls.md
+        - List Flow Operation Results: docs/networkfirewall_list_flow_operation_results.md
+        - List Flow Operations: docs/networkfirewall_list_flow_operations.md
         - List Rule Groups: docs/networkfirewall_list_rule_groups.md
         - List Tags For Resource: docs/networkfirewall_list_tags_for_resource.md
         - List Tls Inspection Configurations: docs/networkfirewall_list_tls_inspection_configurations.md
         - Put Resource Policy: docs/networkfirewall_put_resource_policy.md
         - Start Analysis Report: docs/networkfirewall_start_analysis_report.md
+        - Start Flow Capture: docs/networkfirewall_start_flow_capture.md
+        - Start Flow Flush: docs/networkfirewall_start_flow_flush.md
         - Tag Resource: docs/networkfirewall_tag_resource.md
         - Untag Resource: docs/networkfirewall_untag_resource.md
         - Update Firewall Analysis Settings: docs/networkfirewall_update_firewall_analysis_settings.md
@@ -8417,6 +8523,7 @@ nav:
         - Create Sequence Store: docs/omics_create_sequence_store.md
         - Create Share: docs/omics_create_share.md
         - Create Variant Store: docs/omics_create_variant_store.md
+        - Create Workflow Version: docs/omics_create_workflow_version.md
         - Create Workflow: docs/omics_create_workflow.md
         - Delete Annotation Store Versions: docs/omics_delete_annotation_store_versions.md
         - Delete Annotation Store: docs/omics_delete_annotation_store.md
@@ -8429,6 +8536,7 @@ nav:
         - Delete Sequence Store: docs/omics_delete_sequence_store.md
         - Delete Share: docs/omics_delete_share.md
         - Delete Variant Store: docs/omics_delete_variant_store.md
+        - Delete Workflow Version: docs/omics_delete_workflow_version.md
         - Delete Workflow: docs/omics_delete_workflow.md
         - Get Annotation Import Job: docs/omics_get_annotation_import_job.md
         - Get Annotation Store Version: docs/omics_get_annotation_store_version.md
@@ -8451,6 +8559,7 @@ nav:
         - Get Share: docs/omics_get_share.md
         - Get Variant Import Job: docs/omics_get_variant_import_job.md
         - Get Variant Store: docs/omics_get_variant_store.md
+        - Get Workflow Version: docs/omics_get_workflow_version.md
         - Get Workflow: docs/omics_get_workflow.md
         - List Annotation Import Jobs: docs/omics_list_annotation_import_jobs.md
         - List Annotation Store Versions: docs/omics_list_annotation_store_versions.md
@@ -8473,6 +8582,7 @@ nav:
         - List Tags For Resource: docs/omics_list_tags_for_resource.md
         - List Variant Import Jobs: docs/omics_list_variant_import_jobs.md
         - List Variant Stores: docs/omics_list_variant_stores.md
+        - List Workflow Versions: docs/omics_list_workflow_versions.md
         - List Workflows: docs/omics_list_workflows.md
         - Put S3 Access Policy: docs/omics_put_s3_access_policy.md
         - Start Annotation Import Job: docs/omics_start_annotation_import_job.md
@@ -8490,6 +8600,7 @@ nav:
         - Update Run Group: docs/omics_update_run_group.md
         - Update Sequence Store: docs/omics_update_sequence_store.md
         - Update Variant Store: docs/omics_update_variant_store.md
+        - Update Workflow Version: docs/omics_update_workflow_version.md
         - Update Workflow: docs/omics_update_workflow.md
         - Upload Read Set Part: docs/omics_upload_read_set_part.md
       OpenSearch Ingestion (opensearchingestion):
@@ -9282,6 +9393,7 @@ nav:
         - Describe Logging Configuration: docs/prometheusservice_describe_logging_configuration.md
         - Describe Rule Groups Namespace: docs/prometheusservice_describe_rule_groups_namespace.md
         - Describe Scraper: docs/prometheusservice_describe_scraper.md
+        - Describe Workspace Configuration: docs/prometheusservice_describe_workspace_configuration.md
         - Describe Workspace: docs/prometheusservice_describe_workspace.md
         - Get Default Scraper Configuration: docs/prometheusservice_get_default_scraper_configuration.md
         - List Rule Groups Namespaces: docs/prometheusservice_list_rule_groups_namespaces.md
@@ -9295,6 +9407,7 @@ nav:
         - Update Logging Configuration: docs/prometheusservice_update_logging_configuration.md
         - Update Scraper: docs/prometheusservice_update_scraper.md
         - Update Workspace Alias: docs/prometheusservice_update_workspace_alias.md
+        - Update Workspace Configuration: docs/prometheusservice_update_workspace_configuration.md
       Proton (proton):
         - Client: docs/proton.md
         - Accept Environment Account Connection: docs/proton_accept_environment_account_connection.md
@@ -10002,6 +10115,7 @@ nav:
         - Create Custom Domain Association: docs/redshiftserverless_create_custom_domain_association.md
         - Create Endpoint Access: docs/redshiftserverless_create_endpoint_access.md
         - Create Namespace: docs/redshiftserverless_create_namespace.md
+        - Create Reservation: docs/redshiftserverless_create_reservation.md
         - Create Scheduled Action: docs/redshiftserverless_create_scheduled_action.md
         - Create Snapshot Copy Configuration: docs/redshiftserverless_create_snapshot_copy_configuration.md
         - Create Snapshot: docs/redshiftserverless_create_snapshot.md
@@ -10021,10 +10135,13 @@ nav:
         - Get Endpoint Access: docs/redshiftserverless_get_endpoint_access.md
         - Get Namespace: docs/redshiftserverless_get_namespace.md
         - Get Recovery Point: docs/redshiftserverless_get_recovery_point.md
+        - Get Reservation Offering: docs/redshiftserverless_get_reservation_offering.md
+        - Get Reservation: docs/redshiftserverless_get_reservation.md
         - Get Resource Policy: docs/redshiftserverless_get_resource_policy.md
         - Get Scheduled Action: docs/redshiftserverless_get_scheduled_action.md
         - Get Snapshot: docs/redshiftserverless_get_snapshot.md
         - Get Table Restore Status: docs/redshiftserverless_get_table_restore_status.md
+        - Get Track: docs/redshiftserverless_get_track.md
         - Get Usage Limit: docs/redshiftserverless_get_usage_limit.md
         - Get Workgroup: docs/redshiftserverless_get_workgroup.md
         - List Custom Domain Associations: docs/redshiftserverless_list_custom_domain_associations.md
@@ -10032,11 +10149,14 @@ nav:
         - List Managed Workgroups: docs/redshiftserverless_list_managed_workgroups.md
         - List Namespaces: docs/redshiftserverless_list_namespaces.md
         - List Recovery Points: docs/redshiftserverless_list_recovery_points.md
+        - List Reservation Offerings: docs/redshiftserverless_list_reservation_offerings.md
+        - List Reservations: docs/redshiftserverless_list_reservations.md
         - List Scheduled Actions: docs/redshiftserverless_list_scheduled_actions.md
         - List Snapshot Copy Configurations: docs/redshiftserverless_list_snapshot_copy_configurations.md
         - List Snapshots: docs/redshiftserverless_list_snapshots.md
         - List Table Restore Status: docs/redshiftserverless_list_table_restore_status.md
         - List Tags For Resource: docs/redshiftserverless_list_tags_for_resource.md
+        - List Tracks: docs/redshiftserverless_list_tracks.md
         - List Usage Limits: docs/redshiftserverless_list_usage_limits.md
         - List Workgroups: docs/redshiftserverless_list_workgroups.md
         - Put Resource Policy: docs/redshiftserverless_put_resource_policy.md
@@ -10412,6 +10532,7 @@ nav:
         - List Tags For Resource: docs/route53recoverycontrolconfig_list_tags_for_resource.md
         - Tag Resource: docs/route53recoverycontrolconfig_tag_resource.md
         - Untag Resource: docs/route53recoverycontrolconfig_untag_resource.md
+        - Update Cluster: docs/route53recoverycontrolconfig_update_cluster.md
         - Update Control Panel: docs/route53recoverycontrolconfig_update_control_panel.md
         - Update Routing Control: docs/route53recoverycontrolconfig_update_routing_control.md
         - Update Safety Rule: docs/route53recoverycontrolconfig_update_safety_rule.md
@@ -10644,6 +10765,7 @@ nav:
         - Delete Access Point For Object Lambda: docs/s3control_delete_access_point_for_object_lambda.md
         - Delete Access Point Policy For Object Lambda: docs/s3control_delete_access_point_policy_for_object_lambda.md
         - Delete Access Point Policy: docs/s3control_delete_access_point_policy.md
+        - Delete Access Point Scope: docs/s3control_delete_access_point_scope.md
         - Delete Access Point: docs/s3control_delete_access_point.md
         - Delete Bucket Lifecycle Configuration: docs/s3control_delete_bucket_lifecycle_configuration.md
         - Delete Bucket Policy: docs/s3control_delete_bucket_policy.md
@@ -10670,6 +10792,7 @@ nav:
         - Get Access Point Policy Status For Object Lambda: docs/s3control_get_access_point_policy_status_for_object_lambda.md
         - Get Access Point Policy Status: docs/s3control_get_access_point_policy_status.md
         - Get Access Point Policy: docs/s3control_get_access_point_policy.md
+        - Get Access Point Scope: docs/s3control_get_access_point_scope.md
         - Get Access Point: docs/s3control_get_access_point.md
         - Get Bucket Lifecycle Configuration: docs/s3control_get_bucket_lifecycle_configuration.md
         - Get Bucket Policy: docs/s3control_get_bucket_policy.md
@@ -10690,6 +10813,7 @@ nav:
         - List Access Grants Instances: docs/s3control_list_access_grants_instances.md
         - List Access Grants Locations: docs/s3control_list_access_grants_locations.md
         - List Access Grants: docs/s3control_list_access_grants.md
+        - List Access Points For Directory Buckets: docs/s3control_list_access_points_for_directory_buckets.md
         - List Access Points For Object Lambda: docs/s3control_list_access_points_for_object_lambda.md
         - List Access Points: docs/s3control_list_access_points.md
         - List Caller Access Grants: docs/s3control_list_caller_access_grants.md
@@ -10703,6 +10827,7 @@ nav:
         - Put Access Point Configuration For Object Lambda: docs/s3control_put_access_point_configuration_for_object_lambda.md
         - Put Access Point Policy For Object Lambda: docs/s3control_put_access_point_policy_for_object_lambda.md
         - Put Access Point Policy: docs/s3control_put_access_point_policy.md
+        - Put Access Point Scope: docs/s3control_put_access_point_scope.md
         - Put Bucket Lifecycle Configuration: docs/s3control_put_bucket_lifecycle_configuration.md
         - Put Bucket Policy: docs/s3control_put_bucket_policy.md
         - Put Bucket Replication: docs/s3control_put_bucket_replication.md
@@ -10733,14 +10858,17 @@ nav:
         - Create Table Bucket: docs/s3tables_create_table_bucket.md
         - Create Table: docs/s3tables_create_table.md
         - Delete Namespace: docs/s3tables_delete_namespace.md
+        - Delete Table Bucket Encryption: docs/s3tables_delete_table_bucket_encryption.md
         - Delete Table Bucket Policy: docs/s3tables_delete_table_bucket_policy.md
         - Delete Table Bucket: docs/s3tables_delete_table_bucket.md
         - Delete Table Policy: docs/s3tables_delete_table_policy.md
         - Delete Table: docs/s3tables_delete_table.md
         - Get Namespace: docs/s3tables_get_namespace.md
+        - Get Table Bucket Encryption: docs/s3tables_get_table_bucket_encryption.md
         - Get Table Bucket Maintenance Configuration: docs/s3tables_get_table_bucket_maintenance_configuration.md
         - Get Table Bucket Policy: docs/s3tables_get_table_bucket_policy.md
         - Get Table Bucket: docs/s3tables_get_table_bucket.md
+        - Get Table Encryption: docs/s3tables_get_table_encryption.md
         - Get Table Maintenance Configuration: docs/s3tables_get_table_maintenance_configuration.md
         - Get Table Maintenance Job Status: docs/s3tables_get_table_maintenance_job_status.md
         - Get Table Metadata Location: docs/s3tables_get_table_metadata_location.md
@@ -10749,6 +10877,7 @@ nav:
         - List Namespaces: docs/s3tables_list_namespaces.md
         - List Table Buckets: docs/s3tables_list_table_buckets.md
         - List Tables: docs/s3tables_list_tables.md
+        - Put Table Bucket Encryption: docs/s3tables_put_table_bucket_encryption.md
         - Put Table Bucket Maintenance Configuration: docs/s3tables_put_table_bucket_maintenance_configuration.md
         - Put Table Bucket Policy: docs/s3tables_put_table_bucket_policy.md
         - Put Table Maintenance Configuration: docs/s3tables_put_table_maintenance_configuration.md
@@ -11089,6 +11218,8 @@ nav:
         - Update Experiment: docs/sagemaker_update_experiment.md
         - Update Feature Group: docs/sagemaker_update_feature_group.md
         - Update Feature Metadata: docs/sagemaker_update_feature_metadata.md
+        - Update Hub Content Reference: docs/sagemaker_update_hub_content_reference.md
+        - Update Hub Content: docs/sagemaker_update_hub_content.md
         - Update Hub: docs/sagemaker_update_hub.md
         - Update Image Version: docs/sagemaker_update_image_version.md
         - Update Image: docs/sagemaker_update_image.md
@@ -11894,6 +12025,7 @@ nav:
         - Describe Patch Properties: docs/ssm_describe_patch_properties.md
         - Describe Sessions: docs/ssm_describe_sessions.md
         - Disassociate Ops Item Related Item: docs/ssm_disassociate_ops_item_related_item.md
+        - Get Access Token: docs/ssm_get_access_token.md
         - Get Automation Execution: docs/ssm_get_automation_execution.md
         - Get Calendar State: docs/ssm_get_calendar_state.md
         - Get Command Invocation: docs/ssm_get_command_invocation.md
@@ -11953,6 +12085,7 @@ nav:
         - Resume Session: docs/ssm_resume_session.md
         - Send Automation Signal: docs/ssm_send_automation_signal.md
         - Send Command: docs/ssm_send_command.md
+        - Start Access Request: docs/ssm_start_access_request.md
         - Start Associations Once: docs/ssm_start_associations_once.md
         - Start Automation Execution: docs/ssm_start_automation_execution.md
         - Start Change Request Execution: docs/ssm_start_change_request_execution.md
@@ -12216,6 +12349,7 @@ nav:
         - Detach Volume: docs/storagegateway_detach_volume.md
         - Disable Gateway: docs/storagegateway_disable_gateway.md
         - Disassociate File System: docs/storagegateway_disassociate_file_system.md
+        - Evict Files Failing Upload: docs/storagegateway_evict_files_failing_upload.md
         - Join Domain: docs/storagegateway_join_domain.md
         - List Automatic Tape Creation Policies: docs/storagegateway_list_automatic_tape_creation_policies.md
         - List Cache Reports: docs/storagegateway_list_cache_reports.md
@@ -12356,6 +12490,7 @@ nav:
         - List Group Resources: docs/synthetics_list_group_resources.md
         - List Groups: docs/synthetics_list_groups.md
         - List Tags For Resource: docs/synthetics_list_tags_for_resource.md
+        - Start Canary Dry Run: docs/synthetics_start_canary_dry_run.md
         - Start Canary: docs/synthetics_start_canary.md
         - Stop Canary: docs/synthetics_stop_canary.md
         - Tag Resource: docs/synthetics_tag_resource.md
@@ -12551,7 +12686,10 @@ nav:
         - List Policies: docs/verifiedpermissions_list_policies.md
         - List Policy Stores: docs/verifiedpermissions_list_policy_stores.md
         - List Policy Templates: docs/verifiedpermissions_list_policy_templates.md
+        - List Tags For Resource: docs/verifiedpermissions_list_tags_for_resource.md
         - Put Schema: docs/verifiedpermissions_put_schema.md
+        - Tag Resource: docs/verifiedpermissions_tag_resource.md
+        - Untag Resource: docs/verifiedpermissions_untag_resource.md
         - Update Identity Source: docs/verifiedpermissions_update_identity_source.md
         - Update Policy Store: docs/verifiedpermissions_update_policy_store.md
         - Update Policy Template: docs/verifiedpermissions_update_policy_template.md
@@ -13158,6 +13296,7 @@ nav:
         - Modify Account: docs/workspaces_modify_account.md
         - Modify Certificate Based Auth Properties: docs/workspaces_modify_certificate_based_auth_properties.md
         - Modify Client Properties: docs/workspaces_modify_client_properties.md
+        - Modify Endpoint Encryption Mode: docs/workspaces_modify_endpoint_encryption_mode.md
         - Modify Saml Properties: docs/workspaces_modify_saml_properties.md
         - Modify Selfservice Permissions: docs/workspaces_modify_selfservice_permissions.md
         - Modify Streaming Properties: docs/workspaces_modify_streaming_properties.md

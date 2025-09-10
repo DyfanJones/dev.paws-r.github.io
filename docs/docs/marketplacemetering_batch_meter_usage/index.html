@@ -16,15 +16,15 @@
       
       
       <link rel="icon" href="../../logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.13">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
     
     
       
-        <title>Batch Meter Usage - paws: 0.9.0</title>
+        <title>Batch Meter Usage - paws: 0.10.0</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#batchmeterusage-is-called-from-a-saas-application-listed-on-aws-marketplace-to-post-metering-records-for-a-set-of-customers" class="md-skip">
+        <a href="#the-customeridentifier-parameter-is-scheduled-for-deprecation" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="paws: 0.9.0" class="md-header__button md-logo" aria-label="paws: 0.9.0" data-md-component="logo">
+    <a href="../.." title="paws: 0.10.0" class="md-header__button md-logo" aria-label="paws: 0.10.0" data-md-component="logo">
       
   <img src="../../logo.png" alt="logo">
 
@@ -103,7 +103,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            paws: 0.9.0
+            paws: 0.10.0
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -152,7 +152,7 @@
         <a href="https://github.com/paws-r/paws" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     paws-r
@@ -277,19 +277,19 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="paws: 0.9.0" class="md-nav__button md-logo" aria-label="paws: 0.9.0" data-md-component="logo">
+    <a href="../.." title="paws: 0.10.0" class="md-nav__button md-logo" aria-label="paws: 0.10.0" data-md-component="logo">
       
   <img src="../../logo.png" alt="logo">
 
     </a>
-    paws: 0.9.0
+    paws: 0.10.0
   </label>
   
     <div class="md-nav__source">
       <a href="https://github.com/paws-r/paws" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     paws-r
@@ -8643,13 +8643,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#batchmeterusage-is-called-from-a-saas-application-listed-on-aws-marketplace-to-post-metering-records-for-a-set-of-customers" class="md-nav__link">
+  <a href="#the-customeridentifier-parameter-is-scheduled-for-deprecation" class="md-nav__link">
     <span class="md-ellipsis">
-      BatchMeterUsage is called from a SaaS application listed on AWS Marketplace to post metering records for a set of customers
+      The CustomerIdentifier parameter is scheduled for deprecation
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="BatchMeterUsage is called from a SaaS application listed on AWS Marketplace to post metering records for a set of customers">
+    <nav class="md-nav" aria-label="The CustomerIdentifier parameter is scheduled for deprecation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -14129,13 +14129,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#batchmeterusage-is-called-from-a-saas-application-listed-on-aws-marketplace-to-post-metering-records-for-a-set-of-customers" class="md-nav__link">
+  <a href="#the-customeridentifier-parameter-is-scheduled-for-deprecation" class="md-nav__link">
     <span class="md-ellipsis">
-      BatchMeterUsage is called from a SaaS application listed on AWS Marketplace to post metering records for a set of customers
+      The CustomerIdentifier parameter is scheduled for deprecation
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="BatchMeterUsage is called from a SaaS application listed on AWS Marketplace to post metering records for a set of customers">
+    <nav class="md-nav" aria-label="The CustomerIdentifier parameter is scheduled for deprecation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -14218,30 +14218,35 @@
 </tbody>
 </table>
 
-<h2 id="batchmeterusage-is-called-from-a-saas-application-listed-on-aws-marketplace-to-post-metering-records-for-a-set-of-customers">BatchMeterUsage is called from a SaaS application listed on AWS Marketplace to post metering records for a set of customers<a class="headerlink" href="#batchmeterusage-is-called-from-a-saas-application-listed-on-aws-marketplace-to-post-metering-records-for-a-set-of-customers" title="Permanent link">&para;</a></h2>
+<h2 id="the-customeridentifier-parameter-is-scheduled-for-deprecation">The CustomerIdentifier parameter is scheduled for deprecation<a class="headerlink" href="#the-customeridentifier-parameter-is-scheduled-for-deprecation" title="Permanent link">&para;</a></h2>
 <h3 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h3>
-<p><code>batch_meter_usage</code> is called from a SaaS application listed on AWS
-Marketplace to post metering records for a set of customers.</p>
-<p>For identical requests, the API is idempotent; requests can be retried
-with the same records or a subset of the input records.</p>
-<p>Every request to <code>batch_meter_usage</code> is for one product. If you need to
-meter usage for multiple products, you must make multiple calls to
-<code>batch_meter_usage</code>.</p>
-<p>Usage records are expected to be submitted as quickly as possible after
-the event that is being recorded, and are not accepted more than 6 hours
-after the event.</p>
-<p><code>batch_meter_usage</code> can process up to 25 <code>UsageRecords</code> at a time.</p>
-<p>A <code>UsageRecord</code> can optionally include multiple usage allocations, to
-provide customers with usage data split into buckets by tags that you
-define (or allow the customer to define).</p>
-<p><code>batch_meter_usage</code> returns a list of <code>UsageRecordResult</code> objects,
-showing the result for each <code>UsageRecord</code>, as well as a list of
-<code>UnprocessedRecords</code>, indicating errors in the service side that you
-should retry.</p>
-<p><code>batch_meter_usage</code> requests must be less than 1MB in size.</p>
-<p>For an example of using <code>batch_meter_usage</code>, see <a href="https://docs.aws.amazon.com/marketplace/latest/userguide/saas-code-examples.html#saas-batchmeterusage-example">BatchMeterUsage code
+<p>The <code>CustomerIdentifier</code> parameter is scheduled for deprecation. Use
+<code>CustomerAWSAccountID</code> instead.</p>
+<p>These parameters are mutually exclusive. You can't specify both
+<code>CustomerIdentifier</code> and <code>CustomerAWSAccountID</code> in the same request.</p>
+<p>To post metering records for customers, SaaS applications call
+<code>batch_meter_usage</code>, which is used for metering SaaS flexible
+consumption pricing (FCP). Identical requests are idempotent and can be
+retried with the same records or a subset of records. Each
+<code>batch_meter_usage</code> request is for only one product. If you want to
+meter usage for multiple products, you must make multiple
+<code>batch_meter_usage</code> calls.</p>
+<p>Usage records should be submitted in quick succession following a
+recorded event. Usage records aren't accepted 6 hours or more after an
+event.</p>
+<p><code>batch_meter_usage</code> can process up to 25 <code>UsageRecords</code> at a time, and
+each request must be less than 1 MB in size. Optionally, you can have
+multiple usage allocations for usage data that's split into buckets
+according to predefined tags.</p>
+<p><code>batch_meter_usage</code> returns a list of <code>UsageRecordResult</code> objects, which
+have each <code>UsageRecord</code>. It also returns a list of <code>UnprocessedRecords</code>,
+which indicate errors on the service side that should be retried.</p>
+<p>For Amazon Web Services Regions that support <code>batch_meter_usage</code>, see
+<a href="https://docs.aws.amazon.com/marketplace/latest/APIReference/metering-regions.html#batchmeterusage-region-support">BatchMeterUsage Region
+support</a>.</p>
+<p>For an example of <code>batch_meter_usage</code>, see <a href="https://docs.aws.amazon.com/marketplace/latest/userguide/saas-code-examples.html#saas-batchmeterusage-example">BatchMeterUsage code
 example</a>
-in the <em>AWS Marketplace Seller Guide</em>.</p>
+in the <em>Amazon Web Services Marketplace Seller Guide</em>.</p>
 <h3 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>marketplacemetering_batch_meter_usage(UsageRecords, ProductCode)
 </code></pre></div>
@@ -14257,8 +14262,8 @@ in the <em>AWS Marketplace Seller Guide</em>.</p>
 <tr class="even">
 <td><code id="ProductCode">ProductCode</code></td>
 <td><p>[required] Product code is used to uniquely identify a product in
-AWS Marketplace. The product code should be the same as the one used
-during the publishing of a new product.</p></td>
+Amazon Web Services Marketplace. The product code should be the same as
+the one used during the publishing of a new product.</p></td>
 </tr>
 </tbody>
 </table>
@@ -14285,7 +14290,8 @@ during the publishing of a new product.</p></td>
               )
             )
           )
-        )
+        ),
+        CustomerAWSAccountId = &quot;string&quot;
       ),
       MeteringRecordId = &quot;string&quot;,
       Status = &quot;Success&quot;|&quot;CustomerNotSubscribed&quot;|&quot;DuplicateRecord&quot;
@@ -14309,7 +14315,8 @@ during the publishing of a new product.</p></td>
             )
           )
         )
-      )
+      ),
+      CustomerAWSAccountId = &quot;string&quot;
     )
   )
 )
@@ -14334,7 +14341,8 @@ during the publishing of a new product.</p></td>
             )
           )
         )
-      )
+      ),
+      CustomerAWSAccountId = &quot;string&quot;
     )
   ),
   ProductCode = &quot;string&quot;
@@ -14394,10 +14402,10 @@ during the publishing of a new product.</p></td>
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.prune", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.prune", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>

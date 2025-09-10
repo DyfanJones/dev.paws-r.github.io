@@ -9,22 +9,22 @@
       
       
       
-        <link rel="prev" href="../omics_create_variant_store/">
+        <link rel="prev" href="../omics_create_workflow_version/">
       
       
         <link rel="next" href="../omics_delete_annotation_store_versions/">
       
       
       <link rel="icon" href="../../logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.13">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
     
     
       
-        <title>Create Workflow - paws: 0.9.0</title>
+        <title>Create Workflow - paws: 0.10.0</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#creates-a-workflow" class="md-skip">
+        <a href="#creates-a-private-workflow" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="paws: 0.9.0" class="md-header__button md-logo" aria-label="paws: 0.9.0" data-md-component="logo">
+    <a href="../.." title="paws: 0.10.0" class="md-header__button md-logo" aria-label="paws: 0.10.0" data-md-component="logo">
       
   <img src="../../logo.png" alt="logo">
 
@@ -103,7 +103,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            paws: 0.9.0
+            paws: 0.10.0
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -152,7 +152,7 @@
         <a href="https://github.com/paws-r/paws" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     paws-r
@@ -277,19 +277,19 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="paws: 0.9.0" class="md-nav__button md-logo" aria-label="paws: 0.9.0" data-md-component="logo">
+    <a href="../.." title="paws: 0.10.0" class="md-nav__button md-logo" aria-label="paws: 0.10.0" data-md-component="logo">
       
   <img src="../../logo.png" alt="logo">
 
     </a>
-    paws: 0.9.0
+    paws: 0.10.0
   </label>
   
     <div class="md-nav__source">
       <a href="https://github.com/paws-r/paws" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     paws-r
@@ -9385,6 +9385,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../omics_create_workflow_version/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Create Workflow Version
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -9434,13 +9457,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creates-a-workflow" class="md-nav__link">
+  <a href="#creates-a-private-workflow" class="md-nav__link">
     <span class="md-ellipsis">
-      Creates a workflow
+      Creates a private workflow
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Creates a workflow">
+    <nav class="md-nav" aria-label="Creates a private workflow">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -9745,6 +9768,29 @@
   
   <span class="md-ellipsis">
     Delete Variant Store
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../omics_delete_workflow_version/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Delete Workflow Version
     
   </span>
   
@@ -10268,6 +10314,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../omics_get_workflow_version/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Get Workflow Version
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../omics_get_workflow/" class="md-nav__link">
         
   
@@ -10774,6 +10843,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../omics_list_workflow_versions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    List Workflow Versions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../omics_list_workflows/" class="md-nav__link">
         
   
@@ -11148,6 +11240,29 @@
   
   <span class="md-ellipsis">
     Update Variant Store
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../omics_update_workflow_version/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Update Workflow Version
     
   </span>
   
@@ -16130,13 +16245,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creates-a-workflow" class="md-nav__link">
+  <a href="#creates-a-private-workflow" class="md-nav__link">
     <span class="md-ellipsis">
-      Creates a workflow
+      Creates a private workflow
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Creates a workflow">
+    <nav class="md-nav" aria-label="Creates a private workflow">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -16219,13 +16334,44 @@
 </tbody>
 </table>
 
-<h2 id="creates-a-workflow">Creates a workflow<a class="headerlink" href="#creates-a-workflow" title="Permanent link">&para;</a></h2>
+<h2 id="creates-a-private-workflow">Creates a private workflow<a class="headerlink" href="#creates-a-private-workflow" title="Permanent link">&para;</a></h2>
 <h3 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h3>
-<p>Creates a workflow.</p>
+<p>Creates a private workflow.Private workflows depend on a variety of
+resources that you create and configure before creating the workflow:</p>
+<ul>
+<li>
+<p><em>Input data</em>: Input data for the workflow, stored in an S3 bucket or
+    a Amazon Web Services HealthOmics sequence store.</p>
+</li>
+<li>
+<p><em>Workflow definition files</em>: Define your workflow in one or more
+    workflow definition files, written in WDL, Nextflow, or CWL. The
+    workflow definition specifies the inputs and outputs for runs that
+    use the workflow. It also includes specifications for the runs and
+    run tasks for your workflow, including compute and memory
+    requirements.</p>
+</li>
+<li>
+<p><em>Parameter template files</em>: Define run parameters using a parameter
+    template file (written in JSON).</p>
+</li>
+<li>
+<p><em>ECR container images</em>: Create one or more container images for the
+    workflow. Store the images in a private ECR repository.</p>
+</li>
+<li>
+<p>(Optional) <em>Sentieon licenses</em>: Request a Sentieon license if you
+    plan to use Sentieon software in a private workflow.</p>
+</li>
+</ul>
+<p>For more information, see <a href="https://docs.aws.amazon.com/omics/latest/dev/creating-private-workflows.html">Creating or updating a private workflow in
+Amazon Web Services
+HealthOmics</a>
+in the Amazon Web Services HealthOmics User Guide.</p>
 <h3 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>omics_create_workflow(name, description, engine, definitionZip,
   definitionUri, main, parameterTemplate, storageCapacity, tags,
-  requestId, accelerators)
+  requestId, accelerators, storageType)
 </code></pre></div>
 <h3 id="arguments">Arguments<a class="headerlink" href="#arguments" title="Permanent link">&para;</a></h3>
 <table role="presentation">
@@ -16240,7 +16386,7 @@
 </tr>
 <tr class="odd">
 <td><code id="engine">engine</code></td>
-<td><p>An engine for the workflow.</p></td>
+<td><p>The workflow engine for the workflow.</p></td>
 </tr>
 <tr class="even">
 <td><code id="definitionZip">definitionZip</code></td>
@@ -16260,8 +16406,8 @@
 </tr>
 <tr class="even">
 <td><code id="storageCapacity">storageCapacity</code></td>
-<td><p>The default storage capacity for the workflow runs, in
-gibibytes.</p></td>
+<td><p>The default static storage capacity (in gibibytes) for runs that
+use this workflow or workflow version.</p></td>
 </tr>
 <tr class="odd">
 <td><code id="tags">tags</code></td>
@@ -16277,6 +16423,16 @@ specify a unique ID for each request.</p></td>
 <td><p>The computational accelerator specified to run the
 workflow.</p></td>
 </tr>
+<tr class="even">
+<td><code id="storageType">storageType</code></td>
+<td><p>The default storage type for runs that use this workflow. STATIC
+storage allocates a fixed amount of storage. DYNAMIC storage dynamically
+scales the storage up or down, based on file system utilization. For
+more information about static and dynamic storage, see <a
+href="https://docs.aws.amazon.com/omics/latest/dev/">Running
+workflows</a> in the <em>Amazon Web Services HealthOmics User
+Guide</em>.</p></td>
+</tr>
 </tbody>
 </table>
 
@@ -16288,7 +16444,8 @@ workflow.</p></td>
   status = &quot;CREATING&quot;|&quot;ACTIVE&quot;|&quot;UPDATING&quot;|&quot;DELETED&quot;|&quot;FAILED&quot;|&quot;INACTIVE&quot;,
   tags = list(
     &quot;string&quot;
-  )
+  ),
+  uuid = &quot;string&quot;
 )
 </code></pre></div>
 <h3 id="request-syntax">Request syntax<a class="headerlink" href="#request-syntax" title="Permanent link">&para;</a></h3>
@@ -16310,7 +16467,8 @@ workflow.</p></td>
     &quot;string&quot;
   ),
   requestId = &quot;string&quot;,
-  accelerators = &quot;GPU&quot;
+  accelerators = &quot;GPU&quot;,
+  storageType = &quot;STATIC&quot;|&quot;DYNAMIC&quot;
 )
 </code></pre></div>
 
@@ -16367,10 +16525,10 @@ workflow.</p></td>
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.prune", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.prune", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>
