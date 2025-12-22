@@ -61,6 +61,7 @@ rd_to_md <- function(rd_file, html_dir, md_dir, clear_down = TRUE) {
   }
 
   md <- wrap_r_code(md)
+  md <- restore_html_definition_lists(md)
   writeLines(md, md_file)
 }
 
