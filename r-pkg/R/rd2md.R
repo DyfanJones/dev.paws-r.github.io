@@ -39,6 +39,11 @@ rd_to_md <- function(rd_file, html_dir, md_dir, clear_down = TRUE) {
     if (clear_down) file_delete(c(rd_file, html_file))
   )
 
+  # Convert HTML tables to definition lists BEFORE pandoc conversion
+  html <- readLines(html_file)
+  html <- html_table_to_list(html)
+  writeLines(html, html_file)
+
   pandoc_convert(
     html_file,
     to = "markdown_strict",
@@ -55,7 +60,6 @@ rd_to_md <- function(rd_file, html_dir, md_dir, clear_down = TRUE) {
     }
   }
 
-  md <- html_table_to_list(md)
   md <- wrap_r_code(md)
   writeLines(md, md_file)
 }

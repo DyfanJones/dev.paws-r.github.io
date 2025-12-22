@@ -8,7 +8,7 @@ else
 endif
 export R_USER
 
-.PHONY: all
+.PHONY: all update-deps clean-down build-docs build-site regen-site install-package test-package requirements
 
 update-deps:
 	@echo "update paws dependency"
@@ -21,8 +21,7 @@ clean-down:
 	@rm -rf build/mkdocs/site
 
 build-docs: clean-down
-	@Rscript build/rd2md.R
-	@Rscript build/build_assests.R
+	@Rscript -e "library(paws.site.builder); build_rd_to_md(); build_all_assets()"
 
 build-site: build-docs
 	@echo "INFO $$(date +%F) $$(date +%T): Building site"
@@ -32,7 +31,19 @@ regen-site: build-site
 	@echo "INFO $$(date +%F) $$(date +%T): Moving site to root"
 	@rm -rf build/mkdocs/docs
 
-requirements: 
-	@Rscript -e "install.packages(c('rmarkdown', 'fs', 'yaml', 'roxygen2', 'remotes', 'mirai', 'heck'), repos='https://cran.rstudio.com/')"
+install-package:
+	@echo "INFO $$(date +%F) $$(date +%T): Installing paws.site.builder package"
+	@Rscript -e "install.packages('r-pkg', repos = NULL, type = 'source')"
+
+test-package:
+	@echo "INFO $$(date +%F) $$(date +%T): Running paws.site.builder R CMD check"
+	@Rscript -e "rcmdcheck::rcmdcheck('r-pkg', args = c('--no-manual', '--as-cran'), error_on = 'warning', check_dir = 'check')"
+
+requirements:
+	@echo "INFO $$(date +%F) $$(date +%T): Installing R dependencies"
+	@Rscript -e "install.packages(c('rmarkdown', 'fs', 'yaml', 'roxygen2', 'remotes', 'mirai', 'heck', 'testthat', 'withr', 'rcmdcheck'), repos='https://cran.rstudio.com/')"
+	@echo "INFO $$(date +%F) $$(date +%T): Installing paws.site.builder package"
+	@Rscript -e "install.packages('r-pkg', repos = NULL, type = 'source')"
+	@echo "INFO $$(date +%F) $$(date +%T): Installing Python dependencies"
 	@python -m pip install --upgrade pip
 	@pip install --upgrade mkdocs-material awscli

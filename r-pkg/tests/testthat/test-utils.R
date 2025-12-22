@@ -10,29 +10,23 @@ test_that("find_and_replace adds links correctly", {
 })
 
 test_that("html_table_to_list converts tables to definition lists", {
-  # Simulate actual Rd2HTML output format with proper table structure
-  # The function expects: first table tag to skip, then pairs of <table> and </table>
+  # Simulate actual Rd2HTML output format with proper HTML structure
+  # The function expects: first table (header), then argument tables
   html_lines <- c(
-    "<table>",  # This gets skipped by [-1]
+    '<table style="width: 100%;"><tr><td>header</td></tr></table>',  # Header table (gets skipped by [-1])
     "Some text",
     "<table>",
-    "<tbody>",
-    "<tr>",
-    "<td><code>param1</code></td>",
-    "<td><p>Description 1</p></td>",
-    "</tr>",
-    "</tbody>",
+    "<tr><td><code>param1</code></td>",
+    "<td>",
+    "<p>Description 1</p>",
+    "</td></tr>",
     "</table>",
     "More text",
-    "<table>",
-    "<colgroup>",
-    "</colgroup>",
-    "<tbody>",
-    "<tr>",
-    "<td><code>param2</code></td>",
-    "<td><p>Description 2</p></td>",
-    "</tr>",
-    "</tbody>",
+    '<table role="presentation">',
+    "<tr><td><code>param2</code></td>",
+    "<td>",
+    "<p>Description 2</p>",
+    "</td></tr>",
     "</table>"
   )
 
@@ -41,5 +35,14 @@ test_that("html_table_to_list converts tables to definition lists", {
   expect_true(any(grepl("<dl>", result)))
   expect_true(any(grepl("<dt>", result)))
   expect_true(any(grepl("<dd>", result)))
+  expect_true(any(grepl("<dt><code>param1</code></dt>", result)))
+  expect_true(any(grepl("<dt><code>param2</code></dt>", result)))
   expect_false(any(result == "REMOVE LINE"))
+
+  # <tr> tags should be removed from argument tables but remain in header table
+  dl_indices <- which(grepl("<dl>", result))
+  if (length(dl_indices) > 0) {
+    after_dl <- result[dl_indices[1]:length(result)]
+    expect_false(any(grepl("<tr>", after_dl)), "Should remove tr tags from argument tables")
+  }
 })

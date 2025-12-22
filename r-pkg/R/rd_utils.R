@@ -34,7 +34,7 @@ find_and_replace <- function(string, operator) {
 #' @return Modified character vector with tables converted to definition lists
 #' @export
 html_table_to_list <- function(lines) {
-  # convert table to list
+  # Convert argument tables to definition lists (pkgdown style)
   # Match <table> and </table> tags (with or without attributes)
   idx <- grep("<table[^>]*>|</table>", lines, perl = TRUE)[-1]
 
@@ -47,36 +47,44 @@ html_table_to_list <- function(lines) {
   idx_ranges <- lapply(idx_ranges, \(x) x[1]:x[2])
 
   for (idx_range in idx_ranges) {
+    # Convert table tags to definition list
     lines[idx_range] <- gsub("<table[^>]*>", "<dl>", lines[idx_range], perl = TRUE)
     lines[idx_range] <- gsub("</table>", "</dl>", lines[idx_range])
 
-    lines[idx_range] <- gsub("<td><code", "<dt><code", lines[idx_range])
-    lines[idx_range] <- gsub(
-      '<td style="text-align: left;"><a',
-      "<dt><a",
-      lines[idx_range]
-    )
+    # Process table rows
+    # Pattern: <tr><td>argument_name</td>
+    #          <td>description...</td></tr>
 
-    lines[idx_range] <- gsub("</code></td>", "</code></dt>", lines[idx_range])
-    lines[idx_range] <- gsub("</a></td>", "</a></dt>", lines[idx_range])
+    # First pass: Convert opening tags
+    # <tr><td> becomes <dt> (for argument names)
+    lines[idx_range] <- gsub("<tr><td>", "<dt>", lines[idx_range])
 
-    lines[idx_range] <- gsub("<td><p>", "<dd><p>", lines[idx_range])
-    lines[idx_range] <- gsub(
-      '<td style="text-align: left;">',
-      "<dd>",
-      lines[idx_range]
-    )
+    # Second pass: Convert the first </td> on each line that has <dt>
+    # This closes the argument name
+    for (i in seq_along(idx_range)) {
+      if (grepl("<dt>", lines[idx_range[i]], fixed = TRUE)) {
+        # This line has <dt>, so the </td> on this line closes the <dt>
+        lines[idx_range[i]] <- sub("</td>", "</dt>", lines[idx_range[i]])
+      }
+    }
 
-    lines[idx_range] <- gsub("</p></td>", "</p></dd>", lines[idx_range])
+    # Third pass: Convert standalone <td> to <dd> (description column)
+    lines[idx_range] <- gsub("^<td>", "<dd>", lines[idx_range])
+    lines[idx_range] <- gsub("^\\s*<td>", "<dd>", lines[idx_range])
+
+    # Fourth pass: Convert any remaining </td> to </dd>
     lines[idx_range] <- gsub("</td>", "</dd>", lines[idx_range])
 
+    # Remove </tr> tags
+    lines[idx_range] <- gsub("</tr>", "", lines[idx_range])
+
+    # Remove tbody, colgroup tags
     rm_tbody <- grep("<tbody>|</tbody>", lines[idx_range])
-    rm_tr <- grep("<tr|</tr>", lines[idx_range])
     rm_colgp <- grep("<colgroup>|</colgroup>", lines[idx_range])
     if (length(rm_colgp) > 0) {
       rm_colgp <- rm_colgp[1]:rm_colgp[2]
     }
-    remove <- c(rm_tbody, rm_tr, rm_colgp)
+    remove <- c(rm_tbody, rm_colgp)
     lines[idx_range][remove] <- "REMOVE LINE"
   }
   return(
