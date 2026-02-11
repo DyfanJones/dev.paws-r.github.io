@@ -1,6 +1,7 @@
 #' Simple logger function
 #'
 #' @param msg Character string containing the log message
+#' @param ... Additional arguments passed to sprintf for formatting the message
 #' @return NULL (invisibly)
 #' @export
 log_info <- function(msg, ...) {

@@ -83,10 +83,10 @@ rd_to_md <- function(rd_file, html_dir, md_dir, clear_down = TRUE) {
 #'   Default is "build/mkdocs/docs/docs"
 #' @param html_dir Character string path to output HTML directory.
 #'   Default is tempfile()
-#' @param cores Integer number of cores to use for parallel processing.
-#'   Default is parallel::detectCores()
 #' @param clear_down Logical. If TRUE (default), deletes intermediate rd and html files
 #'   after conversion. Set to FALSE to keep files for debugging or inspection.
+#' @param cores Integer number of cores to use for parallel processing.
+#'   Default is parallel::detectCores()
 #' @return NULL (invisibly)
 #' @export
 build_rd_to_md <- function(

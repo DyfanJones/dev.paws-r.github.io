@@ -7,7 +7,9 @@
 log_info(msg, ...)
 }
 \arguments{
-\item{msg}{Character string containing the log message}
+\item{msg}{Character string containing the log message (can include sprintf format specifiers)}
+
+\item{...}{Additional arguments passed to sprintf for formatting the message}
 }
 \value{
 NULL (invisibly)

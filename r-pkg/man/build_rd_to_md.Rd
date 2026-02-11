@@ -6,8 +6,10 @@
 \usage{
 build_rd_to_md(
   dir = "vendor/paws/paws/man",
-  md_dir = "build/mkdocs/docs/docs",
   long_doc = "vendor/paws/paws",
+  md_dir = "build/mkdocs/docs/docs",
+  html_dir = tempfile("dir"),
+  clear_down = TRUE,
   cores = detectCores()
 )
 }
@@ -15,11 +17,17 @@ build_rd_to_md(
 \item{dir}{Character string path to the directory containing Rd files.
 Default is "vendor/paws/paws/man"}
 
+\item{long_doc}{Character string path to the package for building Rd docs.
+Default is "vendor/paws/paws"}
+
 \item{md_dir}{Character string path to output Markdown directory.
 Default is "build/mkdocs/docs/docs"}
 
-\item{long_doc}{Character string path to the package for building Rd docs.
-Default is "vendor/paws/paws"}
+\item{html_dir}{Character string path to output HTML directory.
+Default is tempfile()}
+
+\item{clear_down}{Logical. If TRUE (default), deletes intermediate rd and html files
+after conversion. Set to FALSE to keep files for debugging or inspection.}
 
 \item{cores}{Integer number of cores to use for parallel processing.
 Default is parallel::detectCores()}
